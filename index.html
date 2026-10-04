@@ -510,7 +510,7 @@ const COMBO={q:2,p:10};const OPENH=[11*60,20*60+30];
 const REVIEWS=[];
 // Dukaan ki jaankari: jo bharoge wahi dikhegi
 const SHOP={addr:"📍 KGN Optical, Tarapur, Munger, Bihar 813221",hours:"🕚 11:00 AM - 8:30 PM",maps:"https://www.google.com/maps/search/?api=1&query=KGN+Optical+Tarapur+Munger+Bihar+813221",returns:"",insta:"kgn_optical",instaUrl:"https://www.instagram.com/kgn_optical?stkn=YXRyenBwbXowdWth"};
-const SITE="https://claude.ai/artifact/NFjZiBsxJjQgfo1gpzN59A";
+const SITE=https:"https://eyeconic-2.onrender.com";
 const OPTS=p=>p.c==="read"?["Power +1.0","Power +1.5","Power +2.0","Power +2.5","Power +3.0","Power +3.5"]:(p.c==="comp"||p.c==="frame")?["No power","With power, Rx on WhatsApp"]:null;
 const cpDisc=(c,x)=>{const k=COUPONS[c];return k?Math.min(k.max||1e9,k.pct?Math.round(x*k.pct/100):k.flat):0};
 const cpChk=(c,x)=>{const k=COUPONS[c];return !k?"cpBad":(S.orders||[]).some(o=>o.cp===c)?"cpUsed":x<k.min?"cpMin":""};
